@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Vuelos</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/icons/bootstrap-icons.css">
+   
+</head>
+<body onload="cargarConsulta();checarSesion();">
+    
+    <nav class="navbar navbar-expand-lg  bg-body-tertiary" data-bs-theme="dark">
+
+       
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="inicio.html">
+                <img src="assets/img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Sistema de vuelos
+            </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              
+              <a class="nav-link" href="consulta.html">Consulta de vuelos</a>
+       <a class="nav-link" href="reserva.html">Reserva de vuelos</a>
+              <a class="nav-link" href="comprar.html">Compra de billetes</a>
+             
+            </div>
+          </div>
+          <div class="d-flex" role="search">
+            <div class="dropdown" >
+                    <button class="btn btn-dark dropdown-toggle" id="usuarioIniciado" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+             
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><button class="dropdown-item" onclick="cerrarSesion()"><i class="bi bi-box-arrow-right p-1"></i>Close<button></li>
+                      </ul>
+              </div>
+            </div>  
+        
+
+     </div>
+
+      </nav>
+
+
+      <div class="card text-center">
+        <div class="card-header">
+              <div class="card body mb-3">
+                <h3><a>Reserva Vuelos</a></h3>
+                <p>Consulte las reservas de vuelo y compre </p>
+              </div>
+               
+              <td> <a href="reserva.html" class="btn btn-success form-control mb-3" >Actualizar </a></td>
+              
+                <table class="table">
+                  <thead class="table-dark">
+                    <tr>
+                      <td>Reserva</td>
+                      <td>Codigo Reserva</td>
+                      <td>Comprar</td>
+                    </tr>
+                  </thead>
+                  <tbody id="registros">
+  
+                  </tbody>
+                </table>
+                   
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/sweetalert2.all.min.js"></script>
+    <script src="assets/js/appReserva.js"></script>
+</body>
+</html>
