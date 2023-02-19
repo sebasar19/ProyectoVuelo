@@ -1,6 +1,6 @@
 # ProyectoVuelo
 ## Para montar el proyecto:
-###### 1.Instalar servidor APACHE con xamp e iniciar los servicio
+###### 1.Instalar servidor APACHE con xamp e iniciar los servicios
 ###### 2.Descomprimir la carpeta **proyectovuelo** y guardarlo en la ruta **C:\xampp\htdocs**
 ###### 3.Abrir phpmyadmin desde **http://localhost/phpmyadmin/** 
 ###### 4.Montar la base de datos importando el archivo **sistema_vuelos.sql** en la carpeta **Sql** , realizar los insert de las tablas segun el orden:
